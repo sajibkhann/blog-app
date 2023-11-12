@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <title>{% block title_block %} Blog {% endblock %}</title>
 </head>
@@ -26,6 +27,7 @@
                 </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="{% url 'App_Blog:create_blog' %}">Write Blog</a>
+                    <a class="dropdown-item" href="{% url 'App_Blog:my_blogs' %}">My Blogs</a>
                     <a class="dropdown-item" href="{% url 'App_Login:profile' %}">Your Profile</a>
                     <hr>
                     <a class="dropdown-item" href="{% url 'App_Login:logout' %}">Logout</a>
